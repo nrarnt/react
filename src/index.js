@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 
 //stateless functional component
 //always return JSX
@@ -11,7 +12,11 @@ import ReactDOM from "react-dom";
 
 function Booklist() {
   return (
-    <section>
+    <section className="booklist">
+      <Livro />
+      <Livro />
+      <Livro />
+      <Livro />
       <Livro />
     </section>
   );
@@ -19,7 +24,7 @@ function Booklist() {
 
 const Livro = () => {
   return (
-    <article>
+    <article className="book">
       <Capa></Capa>
       <Titulo></Titulo>
       <Autor></Autor>
